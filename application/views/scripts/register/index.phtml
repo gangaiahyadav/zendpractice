@@ -1,0 +1,16 @@
+
+<?php 
+if(isset($this->messages) && count($this->messages)){
+	$messages = $this->messages;
+	if(isset($messages['success']))
+	{
+		echo '<div class="success" style="color:green">'.$messages['success'].'</div>';
+	}else if(isset($messages['failed'])){
+		echo '<div class="failed" style="color:red">'.$messages['failed'].'</div>';
+	}	
+}
+
+
+
+echo $this->form; ?>
+

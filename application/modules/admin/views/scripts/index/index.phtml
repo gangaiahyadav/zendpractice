@@ -1,0 +1,6 @@
+<?php $ldata = Zend_Auth::getInstance()->getIdentity();
+
+	print_r($ldata);
+	
+ ?>
+ <a href="<?php echo $this->BaseUrl(); ?>/admin/index/logout" >Logout</a>

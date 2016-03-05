@@ -1,0 +1,13 @@
+<?php if(isset($this->messages) && count($this->messages)){ 
+	$messages = $this->messages;
+	if(isset($messages['success']))
+	{
+		echo '<div class="success" style="color:green">'.$messages['success'].'</div>';
+	}else if(isset($messages['failed'])){
+		echo '<div class="failed" style="color:red">'.$messages['failed'].'</div>';
+	}	
+}
+  $ldata = Zend_Auth::getInstance()->getIdentity();
+		print_r($ldata);
+?>
+<a href="<?php echo $this->BaseUrl(); ?>/login/logout" >Logout</a>
