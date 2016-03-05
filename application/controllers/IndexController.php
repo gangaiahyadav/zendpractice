@@ -13,7 +13,7 @@ class IndexController extends Zend_Controller_Action
       
 		
     }
-    // this is test
+    // this is test repository
 
 
 }
